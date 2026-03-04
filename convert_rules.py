@@ -33,9 +33,9 @@ def main():
     # 去重并排序
     shadowrocket_rules = sorted(set(shadowrocket_rules))
 
-    # 输出到 docs/rules.txt
+    # 输出到 docs/REJECT.txt
     os.makedirs("docs", exist_ok=True)
-    out_path = os.path.join("docs", "rules.txt")
+    out_path = os.path.join("docs", "REJECT.txt")
     with open(out_path, "w", encoding="utf-8") as f:
         f.write("\n".join(shadowrocket_rules))
 
