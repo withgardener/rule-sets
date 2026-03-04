@@ -4,10 +4,10 @@ permissions:
 name: 每日更新 EasyList 规则
 
 on:
-  schedule:
-    - cron: '0 17 * * *'    # 每天 17:00 UTC（北京时间次日 01:00）触发
-  workflow_dispatch:       # 支持手动触发
-
+  push:
+    branches:
+      - main
+      
 jobs:
   build:
     runs-on: ubuntu-latest
