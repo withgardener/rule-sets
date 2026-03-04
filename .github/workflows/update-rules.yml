@@ -29,6 +29,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/REJECT.txt
+          git add docs/REJECT.txt docs/REJECT.yaml
           git commit -m "自动更新 REJECT.txt ($(date -u +'%Y-%m-%d'))" || echo "no changes"
           git push
